@@ -1,0 +1,1 @@
+DELETE http://localhost:8085/api/delete/1

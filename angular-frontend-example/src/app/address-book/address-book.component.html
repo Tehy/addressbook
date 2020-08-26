@@ -1,0 +1,27 @@
+<a routerLink="/"><button>Return</button></a>
+<div>
+  <!-- <div *ngFor="let address of addressbook">
+    {{ address }}
+  </div> -->
+  <div>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Street address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let address of addressbook">
+          <td>{{ address.name }}</td>
+          <td>{{ address.street_address }}</td>
+          <td>{{ address.city }}</td>
+          <td>{{ address.state }}</td>
+          <td>{{ address.zip }}</td>
+          <button (click)="removeAddresss(address.id)">remove</button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

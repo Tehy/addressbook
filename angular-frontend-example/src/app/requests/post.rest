@@ -1,0 +1,11 @@
+POST http://localhost:8085/api/company
+Content-Type: application/json
+
+{
+    "name": "name1",
+    "street_address": "address1",
+    "city": "city1",
+    "state": "state1",
+    "zip": "zip1"
+
+}
