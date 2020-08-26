@@ -1,6 +1,6 @@
 # Description
 
-A full stack addressbook demo app.
+A full stack address book demo app
 
 ## Features
 
