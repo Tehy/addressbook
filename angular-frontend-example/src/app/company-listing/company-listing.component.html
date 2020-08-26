@@ -1,6 +1,10 @@
-<button (click)="getCompanies()">Get new companies</button>
-<a routerLink="/address-book"><button>Addressbook</button></a>
-<input type="text" placeholder="Search by name" [(ngModel)]="searchTerm" />
+<nav>
+  <button (click)="getCompanies()">Get new companies</button>
+  <a routerLink="/address-book"><button>Address book</button></a>
+</nav>
+<div>
+  <input type="text" placeholder="Search by name" [(ngModel)]="searchTerm" />
+</div>
 <div>
   <table>
     <thead>
