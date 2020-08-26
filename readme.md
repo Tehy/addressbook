@@ -38,4 +38,6 @@ Main view
 Items saved  
 <img src="./screenshots/2.JPG" width="400">  
 Saved items view  
-<img src="./screenshots/3.JPG" width="400">
+<img src="./screenshots/3.JPG" width="400">  
+Filter by name  
+<img src="./screenshots/4.JPG" width="400">
