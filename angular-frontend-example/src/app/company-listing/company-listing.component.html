@@ -1,22 +1,17 @@
 <button (click)="getCompanies()">Get new companies</button>
 <a routerLink="/address-book"><button>Addressbook</button></a>
-
+<input type="text" placeholder="Search by name" [(ngModel)]="searchTerm" />
 <div>
   <table>
     <thead>
       <th>Name</th>
       <th>Street address</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Zip</th>
     </thead>
     <tbody>
-      <tr *ngFor="let company of companies">
+      <tr *ngFor="let company of companies | companyFilter: searchTerm">
         <td>{{ company.name }}</td>
         <td>{{ company.address.streetAddress }}</td>
-        <td>{{ company.address.city }}</td>
-        <td>{{ company.address.state }}</td>
-        <td>{{ company.address.zip }}</td>
+
         <button id="{{ company.id }}" (click)="saveCompany(company)" ion-button>
           save company
         </button>

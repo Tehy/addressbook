@@ -12,6 +12,7 @@ export class CompanyListingComponent implements OnInit {
   ngOnInit(): void {
     this.getCompanies();
   }
+  searchTerm: string;
   companies: any;
 
   getCompanies() {
