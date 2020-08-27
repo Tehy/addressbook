@@ -20,7 +20,7 @@ export class AddressBookComponent implements OnInit {
       this.addressbook = JSON.parse(this.addressbook);
     });
   }
-  removeAddresss(id) {
+  removeAddress(id) {
     this.service.removeAddress(id).subscribe(() => {
       this.addressbook = this.addressbook.filter((a) => a.id != id);
     });
