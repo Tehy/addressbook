@@ -8,6 +8,7 @@ A full stack address book demo app
 - Filter listed data by name
 - Save data to database
 - List saved from database
+- Remove data from database
 
 ## Data source
 
